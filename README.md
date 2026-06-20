@@ -1,91 +1,144 @@
+<div align="center">
+
 # html-2-apk
- The simplest method for converting your HTML app to a working Android App.
 
- There are lot of frontend engineers want to convert their own html app to android app,but all the existing methods are too truoblesome,or some methods need you to purchase a software.
+**The simplest method for converting your HTML app into a working Android app.**
 
- Now,do it my way,you do not have to install JDK,you do not have to install Android SDK,you do not have to install eclipse or Android Studio and PhoneGap,and you don't need to spend money.More importantly than all of that,this is easy and simple.You can complete it in 10 minutes!Now,let's begin.
+</div>
 
-## Tool
+---
 
- First you'll need AIDE installed in your mobile phone.To be easy,it's the only tool we will use in this tutorial.
-<br >
-Open you mobile application store,search 'AIDE',and install it.
-<br >
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/02.png)
-## Create new app
-<br >
-Open AIDE,
-<br >
+## 📖 Overview
 
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/03.png)
+Lots of frontend engineers want to convert their HTML app into an Android app, but most existing methods are too troublesome — some even require purchasing software.
 
-<br >
-click 'For Exports',
-<br >
+With this method, you do **not** need to install:
 
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/04.png)
+- ❌ JDK
+- ❌ Android SDK
+- ❌ Eclipse, Android Studio, or PhoneGap
+- ❌ Any paid software
 
-<br >
-click 'New Android App',
-<br >
+Best of all, it's quick and simple — you can complete the whole process in **10 minutes**. Let's begin.
 
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/05.png)
+---
 
-<br >
-click 'CREACT',
-<br >
+## 🛠️ Tool
 
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/06.png)
+The only tool you need is **AIDE**, installed on your mobile phone.
 
-<br >
-Now,you have created a new android project.The project's home directory is the /AppProjects/MyApp directory in your phone.
+1. Open your mobile app store
+2. Search for **"AIDE"**
+3. Install it
 
+![Install AIDE](https://github.com/ymrdf/html-2-apk/raw/master/pic/02.png)
 
-## Modify file
+---
 
-Download files I had provided.
-<br >
-```git clone https://github.com/ymrdf/html-2-apk```
-<br >
-Open up /AppProjects/MyApp/app/src/main using your file browser,replace 'AndroidManifest.xml' with the file of the same name which you just download.
-<br >
-Next ,replace /AppProjects/MyApp/app/src/main/java/com/mycompany/myapp/MainActivity.java.
-<br >
-Next ,replace /AppProjects/MyApp/app/src/main/res/layout/main.xml.
-<br >
-At last,copy the 'assets' folder into /AppProjects/MyApp/app/src/main.There is a sample html app in assets/www,you can replace it with your own.Only one thing to note,the html file must be 'index.html'.
+## 🆕 Create a New App
 
+**1. Open AIDE**
 
-## Test
+![Open AIDE](https://github.com/ymrdf/html-2-apk/raw/master/pic/03.png)
 
+**2. Tap "For Experts"**
 
-Now,you can see the effect.
-<br >
-Back to AIDE,click the triangular button,
-<br >
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/07.png)
-<br>
-click install,You should see a new app in your device like this.
-<br>
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/13.png)
-<br>
-OK,you have successfully converted your html app to android app,and have installed it on your devices.Your '.apk' file is in /AppProjects/MyApp/app/build/bin/.
+![For Experts](https://github.com/ymrdf/html-2-apk/raw/master/pic/04.png)
 
-## Building the APK for Release
+**3. Tap "New Android App"**
 
-Its time for you to deploy your Android app and get it into your users' hands.
-<br >
-Back to AIDE,tap Menu button,
-<br >
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/09.png)
-<br >
-tap 'project',
-<br >
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/14.png)
-<br >
-tap 'publish project'.
-<br >
-![](https://github.com/ymrdf/html-2-apk/raw/master/pic/15.png)
+![New Android App](https://github.com/ymrdf/html-2-apk/raw/master/pic/05.png)
 
+**4. Tap "CREATE"**
 
+![Create](https://github.com/ymrdf/html-2-apk/raw/master/pic/06.png)
 
+You've now created a new Android project. Its home directory is:
+
+```
+/AppProjects/MyApp
+```
+
+on your phone.
+
+---
+
+## ✏️ Modify Files
+
+**1. Clone this repository** to your computer or download it directly to your phone:
+
+```bash
+git clone https://github.com/ymrdf/html-2-apk
+```
+
+**2. Replace the manifest**
+
+Open `/AppProjects/MyApp/app/src/main` in your file browser and replace `AndroidManifest.xml` with the file of the same name from this repo.
+
+**3. Replace the main activity**
+
+Replace:
+```
+/AppProjects/MyApp/app/src/main/java/com/mycompany/myapp/MainActivity.java
+```
+
+**4. Replace the layout**
+
+Replace:
+```
+/AppProjects/MyApp/app/src/main/res/layout/main.xml
+```
+
+**5. Copy in your web app**
+
+Copy the `assets` folder into:
+```
+/AppProjects/MyApp/app/src/main
+```
+
+A sample HTML app is included at `assets/www` — replace it with your own.
+
+> **⚠️ Note:** Your entry file **must** be named `index.html`.
+
+---
+
+## ▶️ Test
+
+Now you can see the result.
+
+**1. Back in AIDE, tap the ▶ (run) button**
+
+![Run](https://github.com/ymrdf/html-2-apk/raw/master/pic/07.png)
+
+**2. Tap "Install"**
+
+You should see a new app installed on your device:
+
+![Installed app](https://github.com/ymrdf/html-2-apk/raw/master/pic/13.png)
+
+🎉 You've successfully converted your HTML app to an Android app and installed it on your device.
+
+Your `.apk` file is located at:
+```
+/AppProjects/MyApp/app/build/bin/
+```
+
+---
+
+## 📦 Building the APK for Release
+
+It's time to deploy your Android app and get it into your users' hands.
+
+**1. Back in AIDE, tap the Menu button**
+
+![Menu](https://github.com/ymrdf/html-2-apk/raw/master/pic/09.png)
+
+**2. Tap "Project"**
+
+![Project](https://github.com/ymrdf/html-2-apk/raw/master/pic/14.png)
+
+**3. Tap "Publish Project"**
+
+![Publish project](https://github.com/ymrdf/html-2-apk/raw/master/pic/15.png)
+
+Follow the prompts to generate a signed, release-ready APK.
